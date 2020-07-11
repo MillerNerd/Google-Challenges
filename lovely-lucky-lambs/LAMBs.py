@@ -6,8 +6,6 @@ def lambs(total_lambs):
 
 
 def generous(total_lambs):
-    if total_lambs < 3:
-        return 1
     return int(math.log(total_lambs+1, 2))
 
 
