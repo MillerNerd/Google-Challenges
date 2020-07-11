@@ -18,6 +18,9 @@ class StingyTests(unittest.TestCase):
     def test_stingy_10(self):
         self.assertEqual(4, stingy(10))
 
+    def test_stingy_12(self):
+        self.assertEqual(5, stingy(12))
+
     def test_stingy_19(self):
         self.assertEqual(5, stingy(19))
 
