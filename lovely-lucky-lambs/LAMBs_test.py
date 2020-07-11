@@ -2,7 +2,7 @@ import unittest
 from LAMBs import stingy, lambs, generous
 
 
-class MyTestCase(unittest.TestCase):
+class StingyTests(unittest.TestCase):
     def test_stingy_1(self):
         self.assertEqual(1, stingy(1))
 
@@ -33,6 +33,8 @@ class MyTestCase(unittest.TestCase):
     def test_stingy_143(self):
         self.assertEqual(10, stingy(143))
 
+
+class GenerousTests(unittest.TestCase):
     def test_generous_1(self):
         self.assertEqual(1, generous(1))
 
@@ -54,6 +56,8 @@ class MyTestCase(unittest.TestCase):
     def test_generous_128(self):
         self.assertEqual(7, generous(128))
 
+
+class FullTest(unittest.TestCase):
     def test_lambs_143(self):
         self.assertEqual(3, lambs(143))
 
