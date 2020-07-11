@@ -1,3 +1,6 @@
+import math
+
+
 def lambs(total_lambs):
     return stingy(total_lambs) - generous(total_lambs)
 
@@ -5,12 +8,7 @@ def lambs(total_lambs):
 def generous(total_lambs):
     if total_lambs < 3:
         return 1
-    # c = 1
-    # iterator
-    n = 1
-    while 2 ** n <= (total_lambs + 1):
-        n = n + 1
-    return n - 1
+    return int(math.log(total_lambs+1, 2))
 
 
 def stingy(total_lambs):
