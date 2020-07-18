@@ -7,6 +7,7 @@ def solution(num):
             num = num / 2
         else:
             # nearest num divisible by 4 is most efficient
+            # this isn't always true
             if (num + 1) % 4 == 0:
                 num = num + 1
                 count = count + 1
