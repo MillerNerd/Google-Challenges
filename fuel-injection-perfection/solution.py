@@ -1,4 +1,5 @@
 def solution(n):
+    n = int(n)
     count = 0
     while n > 1:
         if n == 3:
@@ -13,6 +14,7 @@ def solution(n):
             n = round(n/4.0)
             count = count + 3
     return count
+
 
 # def even(num):
 #     if num == 1:
