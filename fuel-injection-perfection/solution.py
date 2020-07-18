@@ -8,18 +8,12 @@ def solution(n):
         if n % 2 == 0:
             count = count + 1
             n = n / 2
+        # if odd, go to nearest divisible by 4
         else:
-            # nearest num divisible by 4 is most efficient
-            # this isn't true for 3
-            n = round(n/4.0)
-            count = count + 3
+            if (n + 1) % 4 == 0:
+                n = n + 1
+                count = count + 1
+            else:
+                n = n - 1
+                count = count + 1
     return count
-
-
-# def even(num):
-#     if num == 1:
-#         return
-#
-#
-# def odd(num):
-#     pass
